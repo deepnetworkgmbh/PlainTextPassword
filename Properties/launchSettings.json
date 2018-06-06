@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PlainTextPasswords": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\"
+    }
+  }
+}
