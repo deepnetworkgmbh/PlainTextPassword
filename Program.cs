@@ -37,11 +37,11 @@ namespace PlainTextPasswords
                 {
                     while(!reader.EndOfStream)
                     {
-                        var line = reader.ReadLine();
+                        var line = reader.ReadLine().Trim();
                         if (regex.IsMatch(line))
                         {
                             var matchingLine = regex.Replace(line, "$1*$2*$3");
-                            Console.WriteLine($"{filePath} {matchingLine}");
+                            Console.WriteLine($"{filePath},{matchingLine}");
                         }
                     }
                 }
